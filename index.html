@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Obi Madu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .split-left {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            left: 0;
+            background: url('./image.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .split-right {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 767.98px) {
+            .split-left {
+                display: none;
+            }
+            .split-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="split-left d-none d-md-block"></div>
+
+<div class="split-right">
+    <div>
+        <h1 class="display-4">Hi, I'm Obi Madu</h1>
+	<p class="lead">I'm a DevOps and Infrastructure Engineer currently going through the 11th iteration of the HNG Internship. </p>
+	<p class="lead"><b>HNG Username:</b> Obi.M </p>
+	<p class="lead"><b>HNG Email:</b> bob.obi@yahoo.com </p>
+	</hr>
+	<p>Click below to know more about HNG.</p>
+        <div class="mt-4">
+            <a href="https://hng.tech/internship" class="btn btn-primary btn-lg mr-2">HNG Internship</a>
+            <a href="https://hng.tech/hire" class="btn btn-success btn-lg mr-2">HNG Hire</a>
+            <a href="https://hng.tech/premium" class="btn btn-info btn-lg">HNG Premium</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
